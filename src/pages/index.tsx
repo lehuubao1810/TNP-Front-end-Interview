@@ -27,6 +27,7 @@ const Index = () => {
         </h1>
 
         <div className="pt-10">
+          {/* QUESTION 6 */}
           <Tabs.Root defaultValue="all">
             <Tabs.List className="flex gap-2 pb-10">
               <Tabs.Trigger

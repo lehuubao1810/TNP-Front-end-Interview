@@ -88,7 +88,7 @@ export const TodoList = ({ statuses }: Props) => {
       },
     })
 
-  // Animate the todo list
+  // QUESTION 5
   const parent = useRef(null)
 
   useEffect(() => {
@@ -97,6 +97,7 @@ export const TodoList = ({ statuses }: Props) => {
 
   return (
     <ul className="grid grid-cols-1 gap-y-3" ref={parent}>
+      {/* QUESTION 3 */}
       {todos.map((todo) => (
         <li key={todo.id}>
           <div
@@ -130,6 +131,7 @@ export const TodoList = ({ statuses }: Props) => {
               {todo.body}
             </label>
 
+            {/* QUESTION 4 */}
             <div
               className={`ml-auto cursor-pointer ${
                 isDeleting ? 'pointer-events-none' : ''

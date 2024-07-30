@@ -38,6 +38,7 @@ export const CreateTodoForm = () => {
   return (
     <form
       className="group flex items-center justify-between rounded-12 border border-gray-200 py-2 pr-4 focus-within:border-gray-400"
+      // QUESTION 2
       onKeyDown={(e) => {
         if (e.key === 'Enter') {
           e.preventDefault()
@@ -66,6 +67,7 @@ export const CreateTodoForm = () => {
       <button
         type="button"
         disabled={isCreatingTodo}
+        // QUESTION 1
         className="rounded-full bg-gray-700 px-5 py-2 text-sm font-semibold text-white"
         onClick={() => {
           createTodo({
